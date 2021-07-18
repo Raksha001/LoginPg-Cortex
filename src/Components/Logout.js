@@ -1,6 +1,5 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "./Logout.css";
 import { logout, selectUser } from "../features/userSlice";
 
 const Logout = () => {
@@ -16,7 +15,7 @@ const Logout = () => {
       <h1>
         Welcome <span className="username">{user.name}</span>!
       </h1>
-      <button className="logout_btn" onClick={(e) => logout(e)}>
+      <button className="btn" onClick={(e) => logout(e)}>
         Log out
       </button>
     </form>

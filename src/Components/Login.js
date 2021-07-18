@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Login.css";
 
 import { login, logout } from "../features/userSlice";
 import { useDispatch } from "react-redux";
@@ -49,7 +48,7 @@ const Login = () => {
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit" className="submit_btn">
+        <button type="submit" className="btn">
           Submit
         </button>
       </form>
